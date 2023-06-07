@@ -1,0 +1,25 @@
+/* p{
+    color: red;
+}
+
+#heading{
+    
+    background-color: teal;
+    width: 200px;
+    color: orange;
+    padding: 10px;
+}
+
+.border-orange{
+    border: 2px solid orange;
+}
+
+
+a[href="http://www.google.com"]{
+    border: 2px solid green;
+    margin: 20px;
+} */
+
+*{
+    color: brown;
+}

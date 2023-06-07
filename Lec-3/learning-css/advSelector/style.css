@@ -1,0 +1,24 @@
+
+/* div p span{
+    color: red;
+} */
+
+/* ul>li{
+    color: blue;
+} */
+
+/* immediate sibling */
+/* li+li{
+    color: green;
+} */
+
+/* general siling */
+li~li{
+    color: brown;
+}
+
+div{
+    border: 2px solid black;
+    background-color: aqua;
+}
+
