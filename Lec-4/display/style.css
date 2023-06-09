@@ -1,0 +1,14 @@
+/* span{
+    border: 2px solid black;
+    height: 100px;
+    width: 400px;
+} */
+
+span{
+    display: inline-block;
+    border: 2px solid black;
+    height: 50px;
+    width: 400px;
+}
+
+

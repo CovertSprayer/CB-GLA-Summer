@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2,h3{
+    border: 2px solid black;
+
+}
+
+h2{
+    background-color: orange;
+    position: sticky;
+    top: 0;
+}
+
+h3{
+    background-color: aquamarine;
+}
+
+#special{
+    position: relative;
+    z-index: 5;
+}
+
+/* #letter-A{
+    z-index: 2;
+} */
