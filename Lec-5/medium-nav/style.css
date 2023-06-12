@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+.nav-bar{
+    border-bottom: 1px solid black;
+    background-color: #FFC017;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 60px;
+    align-items: center;
+}
+
+img{
+    height: 2.3rem;
+}
+
+.nav-links{
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.nav-links a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:last-child{
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+    border-radius: 4rem;
+    padding: 0.6rem 1.2rem;
+}
