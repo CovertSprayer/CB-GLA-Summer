@@ -1,0 +1,42 @@
+body{
+    background-color: antiquewhite;
+}
+
+.container{
+    border: 2px solid black;
+    display: grid;
+    /* grid-template-columns: 100px 100px 100px 100px; */
+    grid-template-columns: 100px repeat(2, 100px) 100px;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas: 
+    "el1 el1 el2 el2"
+    "el1 el1 el3 el4"
+    "el5 el5 el5 el5";
+}
+
+.el{
+    border: 2px solid black;
+    background-color: coral;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.el-1{
+    grid-area: el1;
+}
+.el-2{
+    grid-area: el2;
+}
+.el-3{
+    grid-area: el3;
+}
+.el-4{
+    grid-area: el4;
+}
+.el-5{
+    grid-area: el5;
+}
+
+

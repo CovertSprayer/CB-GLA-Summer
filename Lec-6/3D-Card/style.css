@@ -1,0 +1,38 @@
+body{
+    perspective: 800px;
+}
+
+.container{
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 50px auto;
+    transition: 800ms;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.container:hover{
+    transform: rotateY(180deg);
+}
+
+.side-A, .side-B{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+    position: absolute;
+}
+
+.side-A{
+    background-color: teal;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOdhTzQalVvkhyMXMKnUbdApWf4_g2xisiOQ&usqp=CAU);
+    background-size: cover;
+    /* backface-visibility: hidden;  */
+
+}
+
+.side-B{
+    background-color: orchid;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
