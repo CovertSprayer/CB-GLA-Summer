@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    background: url('./img/Space.png') rgba(40, 40, 120, 0.736);
+    position: relative;
+    animation: bgMove 3.5s ease-in-out forwards;
+}
+
+.rocket{
+    /* border: 4px solid red; */
+    width: 250px;
+    height: 250px;
+    transform: rotateZ(45deg);
+    position: absolute;
+    bottom: 200px;
+    left: 500px;
+    animation: rocketMove 2s ease-in-out infinite;
+}
+
+img{
+    /* border: 2px solid orange; */
+    width: 100%;
+}
+
+
+@keyframes rocketMove{
+    0%{
+        bottom: 200px;
+    }
+    50%{
+        bottom: 300px;
+    }
+    100%{
+        bottom: 200px;
+    }
+}
+
+@keyframes bgMove {
+    100%{
+        background-position: 8200% 0;
+    }
+}
+
+
