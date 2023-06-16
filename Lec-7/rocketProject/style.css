@@ -18,7 +18,19 @@
     position: absolute;
     bottom: 200px;
     left: 500px;
-    animation: rocketMove 2s ease-in-out infinite;
+    animation: Move 2s ease-in-out infinite,
+                rocketLaunchPos 2s ease-in-out 7.5s forwards,
+                rocketLaunch 2s ease-in-out 9.5s forwards;
+}
+
+.cody{
+    width: 90px;
+    position: absolute;
+    bottom: 200px;
+    left: -200px;
+    animation: Move 2s ease-in-out infinite,
+                codyMoveForward 2s ease-in-out 3.5s forwards,
+                codyInRocket 2s ease-in-out 5.5s forwards;
 }
 
 img{
@@ -27,22 +39,5 @@ img{
 }
 
 
-@keyframes rocketMove{
-    0%{
-        bottom: 200px;
-    }
-    50%{
-        bottom: 300px;
-    }
-    100%{
-        bottom: 200px;
-    }
-}
-
-@keyframes bgMove {
-    100%{
-        background-position: 8200% 0;
-    }
-}
 
 

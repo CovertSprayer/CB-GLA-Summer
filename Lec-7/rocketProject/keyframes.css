@@ -1,0 +1,45 @@
+
+@keyframes Move{
+    0%{
+        bottom: 200px;
+    }
+    50%{
+        bottom: 300px;
+    }
+    100%{
+        bottom: 200px;
+    }
+}
+
+@keyframes bgMove {
+    100%{
+        background-position: 8200% 0;
+    }
+}
+
+@keyframes codyMoveForward{
+    100%{
+        left: 400px;
+    }
+}
+
+@keyframes codyInRocket{
+    100%{
+        transform: scale(0);
+        left: 680px;
+        bottom: 330px;
+    }
+}
+
+@keyframes rocketLaunchPos{
+    100%{
+        transform: rotate(-45deg);
+    }
+}
+
+
+@keyframes rocketLaunch{
+    100%{
+        bottom: 1000px;
+    }
+}
