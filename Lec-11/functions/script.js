@@ -150,4 +150,6 @@ console.log(getData(rectData, perimeter));
 // var areaData = getArea(rectData);
 // console.log(areaData);
 
-
+//High order Function HOF-> if a function accepts or returns a function that function is called HOF
+// eg-> line no 117 -> getData,
+// eg-> line no 37 -> getMovieFun
