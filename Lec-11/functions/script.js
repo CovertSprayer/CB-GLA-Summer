@@ -107,7 +107,7 @@ var subtract = (a,b) => a-b;
 console.log(subtract(2,6));
 
 
-
+// --------------------------- HOF and callback functions
 
 var rectData = [{l:5,b:5},{l:20,b:2},{l:10,b:8},{l:7,b:12}];
 
