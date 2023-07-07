@@ -33,7 +33,9 @@ downloadFile('http://facebook.com/user/profile.jpg', function(file){
 
 });
 
-
+// const file = downloadFile('http://facebook.com/user/profile.jpg');
+// const compressedFile = compressFile(file)
+// uploadFile(compressedFile);
 
 
 
