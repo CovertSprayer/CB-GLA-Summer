@@ -16,6 +16,42 @@ function getData(fileName) {
     })
 }
 
+
+async function createOutput(){
+    const data1 = await getData('input1.txt');
+    const data2 = await getData('input2.txt');
+
+    const arr1 = data1.split('\r\n');
+    const arr2 = data2.split('\r\n');
+
+    const arr = [...arr1, ...arr2];
+
+    arr.sort((a,b)=>{
+        return a-b;
+    })
+
+    const finalData = arr.join('\n');
+
+    const finalLocation = path.join(__dirname, 'data', 'output2.txt');
+    fs.writeFile(finalLocation, finalData, (err)=>{
+        if(err){
+            console.log(err);
+            return;
+        }
+
+        console.log('File written successfully!!');
+    })
+
+
+
+}
+
+createOutput();
+
+
+
+
+
 // getData('input1.txt')
 //     .then((data1)=>{
 //         const arr1 = data1.split('\r\n');
