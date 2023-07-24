@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Edit your comment</h2>
+    
+    <form action="/comments/<%= comment.id %>?_method=PATCH" method="post">
+        <label for="comment">Comment: </label>
+        <input value="<%= comment.text %>" name="text" type="text" id="comment" placeholder="type here...">
+
+        <br> <br>
+        <label for="username">Name:</label>
+        <input value="<%= comment.createdBy %>" name="createdBy" type="text" id="username" placeholder="Your Name">
+
+        <br> <br>
+        <button>Save</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border:2px solid black;
+            width: 280px;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Comments</h1>
+
+    <a href="/comment/new">Add Comment</a>
+
+    <% for(let comment of comments){ %>
+        <div>
+            <h3> <%= comment.text %> </h3>
+            <p>Created By: <%= comment.createdBy %> </p>
+            <a href="/comments/<%= comment.id %>">Show</a>
+            <a href="/comments/<%= comment.id %>/edit">Edit</a>
+            <form action="/comments/<%= comment.id %>?_method=DELETE" method="post">
+                <button>Delete</button>
+            </form>
+        </div>
+    <% } %>
+
+
+
+</body>
+</html>
