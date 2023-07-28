@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Users</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <a href="/users/new">Add a new User </a>
+    <section class="d-flex flex-wrap m-5" >
+        <% for( let user of users ) { %>
+            <div class="card mx-3 border border-5" style="width: 18rem;">
+                <img src="<%= user.photo %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><%= user.name %></h5>
+                    <!-- <p>Age: <%= user.age %></p>
+                    <p>Gender: <%= user.gender %></p>
+                    <p>Email: <%= user.email %></p>
+                    <p>Contact: <%= user.contact %></p> -->
+                    <a href="/users/<%= user.id %>">Show</a>
+                    <a href="/users/<%= user.id %>/edit">Edit</a>
+                    <form action="/users/<%= user._id %>?_method=DELETE" method="post">
+                        <button>Delete</button>
+                    </form>
+                </div>
+            </div>
+        <% } %>
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

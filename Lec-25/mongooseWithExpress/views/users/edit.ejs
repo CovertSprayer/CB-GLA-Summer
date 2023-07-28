@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/users/<%= user._id %>?_method=PATCH" method="post">
+        <input value="<%= user.name %>" type="text" placeholder="Name" name="name"> <br> <br>
+        <input value="<%= user.photo %>" type="text" placeholder="Photo URL" name="photo"> <br> <br>
+        <input value="<%= user.age %>" type="number" placeholder="Age" name="age"> <br> <br>
+        <input value="<%= user.gender %>" type="text" placeholder="Gender" name="gender"> <br> <br>
+        <input value="<%= user.email %>" type="email" placeholder="Email" name="email"> <br> <br>
+        <input value="<%= user.contact %>" type="number" placeholder="Contact" name="contact"> <br> <br>
+        <input value="<%= user.address %>" type="text" placeholder="Address" name="address"> <br> <br>
+        <button>Save</button>
+    </form>
+</body>
+</html>
